@@ -1,0 +1,36 @@
+9510021233	Empresa001	1.137,12	17/03/21	B28078020	18-2021	Telefono001	email001@empresa.com	Contacto001, Clara Valeria
+FRA-204389	Empresa002	5.337,98	11/03/21	A08099681	18-2021	Telefono002	email002@empresa.com;email003@empresa.com	Contacto002, David
+7500503547	Empresa003	4.126,51	17/03/21	A79658845	18-2021	Telefono003		Contacto003, Maria Isabel
+20211927	Empresa004	1.049,60	17/03/21	A35119015	18-2021	Telefono004	email004@empresa.com	Contacto004, Juan
+20211928	Empresa004	5.340,00	17/03/21	A35119015	18-2021	Telefono004	email004@empresa.com	Contacto004, Juan
+20211932	Empresa004	15,03	17/03/21	A35119015	18-2021	Telefono004	email004@empresa.com	Contacto004, Juan
+20211936	Empresa004	262,65	17/03/21	A35119015	18-2021	Telefono004	email004@empresa.com	Contacto004, Juan
+20211939	Empresa004	9.666,01	17/03/21	A35119015	18-2021	Telefono004	email004@empresa.com	Contacto004, Juan
+20211951	Empresa004	175,10	18/03/21	A35119015	18-2021	Telefono004	email004@empresa.com	Contacto004, Juan
+21004888	Empresa005	1.040,00	15/03/21	A33620485	18-2021	Telefono005		Contacto005, Jose Antonio
+21004889	Empresa005	6.695,30	15/03/21	A33620485	18-2021	Telefono005		Contacto005, Jose Antonio
+21004891	Empresa005	1.040,00	15/03/21	A33620485	18-2021	Telefono005		Contacto005, Jose Antonio
+9008412988	Empresa006	7.416,00	18/03/21	A08015836	18-2021	Telefono006	email006@empresa.com	Contacto006, Cristina Belen
+21000354	Empresa007	1.381,02	12/03/21	B66442781	18-2021	Telefono007	email007@empresa.com	Contacto007, Joan
+332584313	Empresa008	258,94	18/03/21	A61123782	18-2021	Telefono008	email008@empresa.com;email009@empresa.com	Contacto008, Mariano
+332585206	Empresa008	245,39	19/03/21	A61123782	18-2021	Telefono008	email008@empresa.com;email009@empresa.com	Contacto008, Mariano
+100156	Empresa009	7.560,00	18/03/21	A08000143	18-2021	Telefono009	email010@empresa.com;email011@empresa.com	
+822C169868	Empresa010	682,00	18/03/21	B08193013	18-2021	Telefono010	email012@empresa.com;email013@empresa.com	Contacto010, Marcos
+
+44101036	Empresa011	3.076,82	17/03/21	A28165587	18-2021	Telefono011	email014@empresa.com	Contacto011, Esperanza
+44101037	Empresa011	1.911,75	17/03/21	A28165587	18-2021	Telefono011	email014@empresa.com	Contacto011, Esperanza
+44101039	Empresa011	1.147,83	17/03/21	A28165587	18-2021	Telefono011	email014@empresa.com	Contacto011, Esperanza
+44101044	Empresa011	530,00	17/03/21	A28165587	18-2021	Telefono011	email014@empresa.com	Contacto011, Esperanza
+FS2103165	Empresa012	19.520,80	15/03/21	B98439821	18-2021	Telefono012	email015@empresa.com	Contacto012, Maria Jose
+7079091620	Empresa013	1.837,98	24/02/21	B61503355	18-2021	Telefono013	email016@empresa.com	Contacto013, Ana/Felipe
+7079092064	Empresa013	97.373,40	11/03/21	B61503355	18-2021	Telefono013	email016@empresa.com	Contacto013, Ana/Felipe
+7079092065	Empresa013	7.872,45	11/03/21	B61503355	18-2021	Telefono013	email016@empresa.com	Contacto013, Ana/Felipe
+7079092081	Empresa013	11.330,00	11/03/21	B61503355	18-2021	Telefono013	email016@empresa.com	Contacto013, Ana/Felipe
+2521163700	Empresa014	38.615,05	17/03/21	A08023145	18-2021	Telefono014	email017@empresa.com	Contacto014, Pablo/Javier
+3483480166	Empresa015	11.375,10	16/03/21	A08233801	18-2021	Telefono015		Contacto015, Miguel Angel
+7001586223	Empresa016	838,40	16/03/21	A08163586	18-2021	Telefono016	email018@empresa.com	Contacto016, Carolina
+11527011	Empresa017	1.323,55	09/03/21	B83886176	18-2021	Telefono017	email019@empresa.com	Contacto017, Andre
+11527012	Empresa017	794,12	09/03/21	B83886176	18-2021	Telefono017	email019@empresa.com	Contacto017, Andre
+11527069	Empresa017	1.852,94	09/03/21	B83886176	18-2021	Telefono017	email019@empresa.com	Contacto017, Andre
+762	Empresa018	3.361,92	16/03/21	B35093590	18-2021	Telefono018		Contacto018, Gustavo
+819	Empresa018	2.442,65	18/03/21	B35093590	18-2021	Telefono018		Contacto018, Gustavo
