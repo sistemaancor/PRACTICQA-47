@@ -13,5 +13,3 @@ Atentamente,
 [Nombre del remitente]
 [Cargo del remitente]
 [Entidad: Entidad 2]
-[Dirección de la entidad]
-[Teléfono de la entidad]

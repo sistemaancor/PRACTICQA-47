@@ -68,6 +68,12 @@ public class AutomatizacionNotificaciones {
         int opcionEntidad = scanner.nextInt();
         scanner.nextLine(); // Consumir la nueva línea
 
+        System.out.println("Seleccione el tipo de carta:");
+        System.out.println("1. Tipo 1");
+        System.out.println("2. Tipo 2");
+        int tipoCarta = scanner.nextInt();
+        scanner.nextLine(); // Consumir la nueva línea
+
         String archivo = "Nulidad.txt";
         List<String[]> datosProveedores = leerArchivo(archivo);
         if (datosProveedores != null) {
@@ -75,13 +81,13 @@ public class AutomatizacionNotificaciones {
             System.out.println("Suma total de nulidades: " + sumaTotal);
             System.out.println("Seleccione el número de nulidades a procesar:");
             int numNulidades = scanner.nextInt();
-            procesarNotificaciones(datosProveedores, numNulidades, opcionEntidad);
+            procesarNotificaciones(datosProveedores, numNulidades, opcionEntidad, tipoCarta);
         } else {
             System.out.println("Error al leer el archivo de datos.");
         }
     }
 
-    public static void procesarNotificaciones(List<String[]> datosProveedores, int numNulidades, int opcionEntidad) {
+    public static void procesarNotificaciones(List<String[]> datosProveedores, int numNulidades, int opcionEntidad, int tipoCarta) {
         EntidadGubernamental entidad = entidadesGubernamentales.get(opcionEntidad - 1);
 
         for (int i = 0; i < numNulidades && i < datosProveedores.size(); i++) {
@@ -98,8 +104,16 @@ public class AutomatizacionNotificaciones {
                     pagos.add(proveedor[j]);
                 }
             }
-            // Generar carta de notificación
-            String carta = generarCarta(entidad.getNombre(), proveedor[8], codigoNulidad, nombreEmpresa, calcularTotal(pagos), pagos);
+            // Generar carta de notificación según el tipo seleccionado
+            String carta = "";
+            if (tipoCarta == 1) {
+                carta = generarCartaTipo1(entidad.getNombre(), proveedor[8], codigoNulidad, nombreEmpresa, calcularTotal(pagos), pagos);
+            } else if (tipoCarta == 2) {
+                carta = generarCartaTipo2(entidad.getNombre(), proveedor[8], codigoNulidad, nombreEmpresa, calcularTotal(pagos), pagos);
+            } else {
+                System.out.println("Tipo de carta no válido.");
+                return;
+            }
             // Archivar la carta en un archivo de texto
             archivarCarta(carta, codigoNulidad);
             // Enviar notificación
@@ -159,8 +173,22 @@ public class AutomatizacionNotificaciones {
         return total;
     }
 
-    public static String generarCarta(String nombreEntidad, String nombreProveedor, String codigoNulidad, String nombreEmpresa, double totalServicios, List<String> listaPagoServicios) {
-        // Estructura del mensaje de la carta
+    public static String generarCartaTipo1(String nombreEntidad, String nombreProveedor, String codigoNulidad, String nombreEmpresa, double totalServicios, List<String> listaPagoServicios) {
+        StringBuilder carta = new StringBuilder();
+        carta.append("¡Hola ").append(nombreProveedor).append("!\n\n");
+        carta.append("¡Te escribo para contarte que ya hemos preparado la nulidad ").append(codigoNulidad).append(" para cuadrar lo del pago de los servicios de tu empresa ").append(nombreEmpresa).append("! El total a pagar es de ").append(totalServicios).append(", y aquí te dejo el desglose:\n\n");
+        for (String pago : listaPagoServicios) {
+            carta.append(pago).append("\n");
+        }
+        carta.append("\nCuando puedas, échale un vistazo y confírmame que todo está como debe ser. Solo necesitas mandarme un correo a [correo_empresa_nulidad] diciendo que todo está ok.\n\n");
+        carta.append("¡Gracias y un saludo!\n\n");
+        carta.append("[Nombre del remitente]\n");
+        carta.append("[Cargo del remitente]\n");
+        carta.append("[Entidad: ").append(nombreEntidad).append("]\n");
+        return carta.toString();
+    }
+
+    public static String generarCartaTipo2(String nombreEntidad, String nombreProveedor, String codigoNulidad, String nombreEmpresa, double totalServicios, List<String> listaPagoServicios) {
         StringBuilder carta = new StringBuilder();
         carta.append("Estimado/a ").append(nombreProveedor).append(",\n\n");
         carta.append("Por medio de la presente, le informamos que hemos procedido a la creación de la nulidad ").append(codigoNulidad).append(". Esta acción corresponde al proceso de compensación económica por los servicios prestados por su compañía ").append(nombreEmpresa).append(", cuyo monto asciende a ").append(totalServicios).append(". A continuación, encontrará el detalle de los pagos correspondientes:\n\n");
@@ -173,8 +201,6 @@ public class AutomatizacionNotificaciones {
         carta.append("[Nombre del remitente]\n");
         carta.append("[Cargo del remitente]\n");
         carta.append("[Entidad: ").append(nombreEntidad).append("]\n");
-        carta.append("[Dirección de la entidad]\n");
-        carta.append("[Teléfono de la entidad]\n");
         return carta.toString();
     }
 
