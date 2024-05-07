@@ -1,0 +1,6 @@
+en este codigo se comienza con dos opciones de dos entidades las cuales soin entidad uno y entidad dos 
+
+las cuales al escoger muestran dos opciones de la carta posibles y despues se ecoge del txt nulidad en numero de nilidades a pedido del cliente.
+mostranfdo todads las ccartas antes dichas
+
+no permite la repeticion de cartas por lo que borrar las cartas anteriores en caso de querrer mandar una carta nueva a otra entidad
